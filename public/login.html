@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <title>Prisijungimas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2>Prisijungti</h2>
+      <p>Įveskite duomenis, kad prisijungtumėte</p>
+    </div>
+    
+    <div class="card-content">
+      <!-- Prisijungimo forma -->
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Slapyvardis</label>
+          <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Slaptažodis</label>
+          <input type="password" id="password" required>
+        </div>
+        <p id="login-error" class="error-message"></p>
+        <button type="submit" class="btn btn-primary">Prisijungti</button>
+      </form>
+
+      <!-- Dviejų faktorių autentikacijos forma -->
+      <form id="twofa-form" style="display: none;">
+        <div class="form-group">
+          <label for="twoFactorCode">Patvirtinimo kodas</label>
+          <input type="text" id="twoFactorCode" placeholder="6 skaitmenų kodas" maxlength="6" required>
+        </div>
+        <p id="twofa-error" class="error-message"></p>
+        <button type="submit" class="btn btn-primary">Patvirtinti</button>
+      </form>
+    </div>
+
+    <div class="card-footer">
+      <a href="index.html" class="btn btn-link">Grįžti atgal</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2>Redaguoti naują straipsnį</h2>
+    </div>
+    <form id="edit-news-form">
+      <div class="card-content">
+        <div class="form-group">
+          <label for="edit-news-title">Pavadinimas</label>
+          <input type="text" id="edit-news-title" placeholder="Enter news title" required>
+        </div>
+        <div class="form-group">
+          <label for="edit-news-content">Pastraipa</label>
+          <textarea id="edit-news-content" placeholder="Enter news content" rows="8" required></textarea>
+        </div>
+        <p id="edit-error" class="error-message"></p>
+      </div>
+      <div class="card-footer">
+        <a href="admin.html" class="btn btn-secondary">Atšaukti</a>
+        <button type="submit" class="btn btn-primary">Išsaugoti</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

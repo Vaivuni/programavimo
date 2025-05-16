@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sukurti naujieną</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2>Sukurti naują straipsnį</h2>
+    </div>
+    <form id="create-news-form">
+      <div class="card-content">
+        <div class="form-group">
+          <label for="news-title">Pavadinimas</label>
+          <input type="text" id="news-title" placeholder="Enter news title" required>
+        </div>
+        <div class="form-group">
+          <label for="news-content">Pastraipa...</label>
+          <textarea id="news-content" placeholder="Enter news content" rows="8" required></textarea>
+        </div>
+        <p id="create-error" class="error-message"></p>
+      </div>
+      <div class="card-footer">
+        <a href="admin.html" class="btn btn-secondary">Atšaukti</a>
+        <button type="submit" class="btn btn-primary">Išsaugoti</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

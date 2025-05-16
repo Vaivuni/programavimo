@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pradžia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>Skaniai ir greitai</h1>
+    <div class="nav-links">
+      <!-- Paieškos laukelis su mažesniu mygtuku -->
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Ieškoti receptų..." />
+        <button id="search-button" class="btn btn-primary">Ieškoti</button>
+      </div>
+      <a href="login.html">Prisijungti</a>
+      <a href="apie.html">Apie</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="news-header">
+      <h1>Recepčiukai</h1>
+      <!-- Paieškos rezultatų antraštė -->
+      <div id="search-results-header" style="display: none;">
+        <h2>Paieškos rezultatai: <span id="search-query"></span></h2>
+        <button id="clear-search" class="btn btn-secondary">Grįžti į visus receptus</button>
+      </div>
+    </div>
+    <div id="news-container" class="news-container">
+      <div class="loading">Luktelki...</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
